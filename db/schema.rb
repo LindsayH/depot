@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141209040817) do
+=======
+ActiveRecord::Schema.define(version: 20141207035903) do
+>>>>>>> 1faffa56f4728fe06b7fcea37b2fc4220d942329
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +30,11 @@ ActiveRecord::Schema.define(version: 20141209040817) do
     t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
     t.integer  "quantity",   default: 1
+=======
+    t.integer  "quantity"
+>>>>>>> 1faffa56f4728fe06b7fcea37b2fc4220d942329
   end
 
   add_index "line_items", ["cart_id"], name: "index_line_items_on_cart_id", using: :btree
